@@ -21,12 +21,12 @@ const taskRoutes = require("./routes/taskRoutes");
 app.use("/api/tasks", taskRoutes);
 
 // Serve React frontend in production
-const buildPath = path.join(__dirname, "..", "client", "build");
+/* const buildPath = path.join(__dirname, "..", "client", "build");
 app.use(express.static(buildPath));
 
 app.get(/^\/(?!api).*/, (req, res) => {
   res.sendFile(path.join(buildPath, "index.html"));
-});
+}); /*
 
 // Start server
 const PORT = process.env.PORT || 5000;
